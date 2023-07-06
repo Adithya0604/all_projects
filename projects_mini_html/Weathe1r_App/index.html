@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <script>
+            function changeBg()
+            { 
+                const image = [
+                    'url("cloud.webp")',
+                    
+                ]
+                const section = document.querySelector('header')
+                const bg = image[Math.floor(Math.random() * image.length)]
+
+                section.style.backgroundImage = bg;
+            }
+            setInterval(changeBg , 10)
+        </script>
+
+
+
+        <br><br><br><br><br><br>
+
+<main>
+    <center >
+        <form id="searching_city" method="get">
+        
+            <input type="search" id="search_city" name="city_name" placeholder="Enter your city name" required  >
+            <button id="search_btn" >Search</button>
+        </form>
+
+
+        <div id="location" style="color: black;">
+            <p> ------- </p>
+        </div>
+
+        <div id="temp" style="color: black;">
+
+            <p><span id = "temp_value"> ------ </span> <span id="temp_degree">&#8451 </span></p>
+        </div>
+
+
+        <div id="climate" style="color: black;"> 
+            <p>-------</p>
+        </div>
+
+        
+        </center>
+    
+</main>
+
+
+
+
+</header>
+</body>
+</html>

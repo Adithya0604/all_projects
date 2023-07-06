@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="shortcut icon" href="https://image.shutterstock.com/image-illustration/3d-render-number-three-glowing-600w-1890767731.jpg" type="image/x-icon">
+    <title>Animaction</title>
+</head> 
+<style>  
+.container{
+    background-color:yellowgreen;
+  
+} 
+.box{
+    
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    position: relative; 
+    /* position: relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent's position and changing the layout around it */
+
+   /* animation: adithya 10s timing-function delay 5 direction fill-mode;
+    */
+    /* animation-name: adithya; */
+    animation-name: beena;
+    /* you can keep any name to the animation */
+    animation-duration: 1s;
+    /* we can keep the time in min and sec and nanosec if we keep in less time will be faster then  */
+    animation-iteration-count: 100; 
+    /* we can write the count no infinite in which it will not stop */
+    animation-timing-function: ease-in-out;
+    /* it is the function which will change the timing function  */
+    animation-fill-mode: alternate;
+   /* it is nothing but whihc will go forward and stop there for some keys and for some keys it will come backward and stop like that  */
+   /* animation-delay: 0s;  */
+   /* firstly it will delay 10 seconds and then will move forward  */
+   animation-direction:reverse; 
+   /* the dirction of from which it will come from  */
+} 
+
+@keyframes beena { 
+    0%{
+        top:0px;
+        left:0px;
+    }
+    25%{
+        top:0px;
+        left: 1000px;
+    }
+   
+    75%{
+        top:250px;
+        left:2500px;
+    }
+    100%{
+        top:250px;
+        left: 1000px;
+    }
+    
+}
+
+/* 
+ @keyframes adithya {
+     from {
+width: 200px;
+     }
+     to{
+width: 500px;
+     }
+ } */
+</style>
+<body>
+    <div  class="container" > 
+
+        <div  class="box" > this is a box</div>
+    </div>
+</body>
+</html>

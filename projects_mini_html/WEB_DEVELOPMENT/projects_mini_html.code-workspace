@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Downloads/images_web "
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projects_mini_html"
+	}
+}

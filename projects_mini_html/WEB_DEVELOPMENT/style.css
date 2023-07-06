@@ -1,0 +1,200 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.1)),url("./bg_image.jpg"); */
+    background-repeat: no-repeat;
+    background: url(bg_image.jpg);
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+   padding: 5px;
+    background: pink;
+    color: black; 
+    display: flex; 
+    justify-content:
+     space-between;
+    align-items: center;
+
+}
+
+ .logo{
+        width: 25%;
+      text-align: center;
+      display: flexbox; justify-content: space-around;
+      font-family: 'chalkboard';
+      font-style: italic;
+      animation:  3s linear 1s infinite alternate slidein; // name duration timing-function delay iteration-count direction fill-mode;
+      
+}
+
+  .menu
+  {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'chalkboard';
+    font-style: italic;
+  }
+
+  .menu li {
+     width: 120px;
+     margin: 15px;
+     padding: 10px;
+
+  }
+
+  .menu li a{
+    text-decoration:none;
+    color: rgb(49, 12, 12);
+  }
+
+  .action1 , .menu li a :hover
+  {
+    background : deeppink;
+    border-radius : 3px;
+    padding: 3px;
+    margin: 3px;
+    list-style: none;
+  }
+
+  .action2 , .menu li a :hover
+  {
+    background : deeppink;
+    border-radius : 3px;
+    padding: 3px;
+    margin: 2px;
+    list-style: none;
+  }
+  .action3 , .menu li a :hover
+  {
+    background : deeppink;
+    border-radius : 3px;
+    padding: 5px;
+    margin: 5px;
+    list-style: none;
+  }
+  .action4 , .menu li a :hover
+  {
+    background : deeppink;
+    border-radius : 3px;
+    padding: 5px;
+    margin: 5px;
+    list-style: none;
+  }
+
+span{
+  width: 10%;
+  font-style: italic;
+  font-family: "ChalkBoard";
+  font-weight: bolder;
+  font-size: large;
+  background: rgb(30, 22, 4);
+  color: rgb(37, 8, 8); display: flexbox; 
+  background-position: 5px;
+
+}
+
+  .menu .fa{
+    margin-right: 2px;
+  }
+
+  main{
+    width: 90%;
+    height: 87vh;
+    display: flex; justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: aqua;
+  }
+
+  
+
+   section h3{
+    font-style: italic; 
+    font-family: 'Chalkboard';
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black ;
+    text-align: center;
+  }
+
+
+  section h1{
+   font-weight: 500;
+   font-size: 60px;
+    font-style: italic; 
+    font-family: 'Chalkboard';
+    text-shadow: 3px 2px 5px rgb(0, 0, 0) ;
+    text-align: center;
+  }
+
+  section p{
+    
+    font-size: 20px;
+     font-style: italic; 
+     font-family: 'Chalkboard';
+     text-shadow: 1px 2px 1px rgb(0, 0, 0) ;
+     text-align: center;
+    
+   }
+
+
+   section a{
+    font-style: italic;
+    font-size: large;
+    font-weight: 100;
+    font-family: 'Chalkboard';
+    margin-top: 12px;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center; 
+    transition: all ease 0.5s;
+   }
+  
+   section .buttone{
+    background : none ;
+    color: black;
+
+   }
+
+
+   .butthree:after{
+    content: '';
+    animation: repeattext 10s infinite;
+color: #00b894;
+   }
+
+   @keyframes repeattext {
+    
+    100%{content :icon;}
+   
+    
+  
+   }
+
+   footer{
+    width: 100%;
+    height: 10vh;
+   padding: 70px;
+   text-align: center;
+background: #e9e1e1;
+   }
+
+
+
+
+   
+
+
+   
